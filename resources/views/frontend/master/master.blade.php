@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home</title>
+	<link href="{{ asset('css/bootstarp.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="">Job Portal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="">Job list</a>
+      </li>
+
+      
+     
+     
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    	
+      <li class="nav-item">
+        <a class="nav-link active" href="{{ route('login') }}">Login</a>
+      </li>
+    
+    </ul>
+    
+  </div>
+</nav>
+<!--end-navbar-->
+
+
+@yield('content')
+
+
+
+	<script src="{{ asset('js/app.js') }}"></script>
+</body>
+</html>
